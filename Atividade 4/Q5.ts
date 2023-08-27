@@ -1,14 +1,21 @@
 // Crie uma função que retorne os números de um array passados por parâmetro separados por traço (-) no formato string. Para isso, use o método forEach dos arrays.
 
-const array = [1, 2, 3, 4, 5];
+function formatarArrayParaString(arrayNumeros: number[]): string {
+    let resultado: string = "";
 
-// Usando a função map para dobrar os elementos
-const dobrados = array.map(numero => numero * 2);
+    arrayNumeros.forEach((numero, index) => {
+        resultado += numero.toString();
+        if (index !== arrayNumeros.length - 1) {
+            resultado += "-";
+        }
+    });
 
-console.log("Array dobrado:", dobrados); // Saída: [2, 4, 6, 8, 10]
+    return resultado;
+}
 
-// Usando a função reduce para totalizar a soma dos elementos dobrados
-const somaTotal = dobrados.reduce((acumulador, numero) => acumulador + numero, 0);
+const numeros: number[] = [1, 2, 3, 4, 5];
+const stringFormatada: string = formatarArrayParaString(numeros);
 
-console.log("Soma total:", somaTotal); // Saída: 30
+console.log(stringFormatada);
+
 
