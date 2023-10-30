@@ -241,3 +241,41 @@ class App {
       console.log("9. Sair");
 
       const opcao = Number(prompt("Digite o número da opção desejada:"));
+switch (opcao) {
+        case 1:
+          
+          break;
+        case 2:
+          
+          break;
+        case 3:
+          
+          break;
+        case 4:
+       
+          break;
+        case 5:
+          
+          break;
+        case 6:
+         
+          break;
+        case 7:
+         
+          break;
+        case 8:
+         
+          break;
+        case 9:
+          console.log("Saindo da aplicação.");
+          return;
+        default:
+          console.log("Opção inválida. Por favor, escolha uma opção válida.");
+          break;
+      }
+    }
+  }
+}
+
+const minhaApp = new App();
+minhaApp.iniciar();
