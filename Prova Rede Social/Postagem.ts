@@ -21,6 +21,7 @@ class Postagem {
     this._data = data;
     this._perfil = perfil;
   }
+
   getId(): number {
     return this._id;
   }
