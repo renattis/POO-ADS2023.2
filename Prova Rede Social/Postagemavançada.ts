@@ -26,3 +26,17 @@ class PostagemAvancada extends Postagem {
     return this._visualizacoesRestantes;
   }
 }
+  adicionarHashtag(hashtag: string): void {
+    this._hashtags.push(hashtag);
+  }
+
+  existeHashtag(hashtag: string): boolean {
+    return this._hashtags.includes(hashtag);
+  }
+
+  decrementarVisualizacoes(): void {
+    if (this._visualizacoesRestantes > 0) {
+      this._visualizacoesRestantes--;
+    }
+  }
+}
