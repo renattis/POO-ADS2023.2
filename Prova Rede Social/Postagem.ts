@@ -21,8 +21,6 @@ class Postagem {
     this._data = data;
     this._perfil = perfil;
   }
-
-  // Métodos get
   getId(): number {
     return this._id;
   }
@@ -46,7 +44,7 @@ class Postagem {
   getPerfil(): Perfil {
     return this._perfil;
   }
-}
+
   curtir(): void {
     this._curtidas++;
   }
