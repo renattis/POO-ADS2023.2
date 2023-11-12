@@ -17,7 +17,6 @@ class PostagemAvancada extends Postagem {
     this._visualizacoesRestantes = visualizacoesRestantes;
   }
 
-  // Métodos get
   getHashtags(): string[] {
     return this._hashtags;
   }
@@ -25,7 +24,7 @@ class PostagemAvancada extends Postagem {
   getVisualizacoesRestantes(): number {
     return this._visualizacoesRestantes;
   }
-}
+
   adicionarHashtag(hashtag: string): void {
     this._hashtags.push(hashtag);
   }
