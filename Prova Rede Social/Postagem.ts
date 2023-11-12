@@ -47,3 +47,15 @@ class Postagem {
     return this._perfil;
   }
 }
+  curtir(): void {
+    this._curtidas++;
+  }
+
+  descurtir(): void {
+    this._descurtidas++;
+  }
+
+  ehPopular(): boolean {
+    return this._curtidas > 1.5 * this._descurtidas;
+  }
+}
